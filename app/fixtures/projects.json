@@ -36,7 +36,7 @@
       "frontmatter": {
         "date": "2020-01-10",
         "title": "25 + 5 Clock",
-        "tech": ["React JS", "Typescript", "Styled Component"],
+        "tech": ["React JS", "Typescript", "Styled Components"],
         "github": "https://github.com/ductmOfficial",
         "external": "https://github.com/ductmOfficial",
         "ios": "",
