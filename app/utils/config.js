@@ -7,15 +7,15 @@ export default {
       prefix: 'fab',
       url: 'https://github.com/ductmOfficial',
     },
-    {
-      name: 'instagram',
-      prefix: 'fab',
-      url: 'https://www.instagram.com/minhduc.tran.sgu/',
-    },
+    // {
+    //   name: 'instagram',
+    //   prefix: 'fab',
+    //   url: 'https://www.instagram.com/minhduc.tran.sgu/',
+    // },
     {
       name: 'linkedin-in',
       prefix: 'fab',
-      url: 'https://www.linkedin.com/in/minh-duc-tran-554987109/',
+      url: 'https://www.linkedin.com/in/duc-tran-183a56220/',
     },
     {
       name: 'twitter',
