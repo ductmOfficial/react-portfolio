@@ -30,6 +30,7 @@ import theme from 'styles/theme';
 /* eslint-disable import/no-unresolved, import/extensions */
 import '!file-loader?name=[name].[ext]!./images/favicon.png';
 import '!file-loader?name=[name].[ext]!../static/resume.pdf';
+import '!file-loader?name=[name].[ext]!../static/og.png';
 import 'file-loader?name=.htaccess!./.htaccess';
 /* eslint-enable import/no-unresolved, import/extensions */
 

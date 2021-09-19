@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
 
 import Biography from 'components/Biography';
 import Contact from 'components/Contact';
@@ -21,10 +20,6 @@ import Wrapper from './Wrapper';
 export default function HomePage() {
   return (
     <Layout>
-      <Helmet>
-        <meta name="description" content="A Duc Tran application homepage" />
-      </Helmet>
-
       <Wrapper className="fill-height">
         <Hero />
         <Biography />
