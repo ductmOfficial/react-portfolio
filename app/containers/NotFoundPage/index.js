@@ -11,6 +11,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { Helmet } from 'react-helmet';
 import { navDelay } from 'utils/constants';
 
+import Layout from 'containers/Layout';
 import Button from './Button';
 import Wrapper from './Wrapper';
 import Title from './Title';
@@ -27,7 +28,7 @@ export default function NotFound() {
   }, []);
 
   return (
-    <div>
+    <Layout>
       <Helmet title="Page Not Found" />
 
       <TransitionGroup component={null}>
@@ -45,6 +46,6 @@ export default function NotFound() {
           </CSSTransition>
         )}
       </TransitionGroup>
-    </div>
+    </Layout>
   );
 }

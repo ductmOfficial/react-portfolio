@@ -3,3 +3,4 @@ export const DAEMON = '@@saga-injector/daemon';
 export const ONCE_TILL_UNMOUNT = '@@saga-injector/once-till-unmount';
 
 export const navDelay = 1000;
+export const loaderDelay = 2000;

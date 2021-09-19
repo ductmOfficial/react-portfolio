@@ -5,7 +5,12 @@ export default {
     {
       name: 'github',
       prefix: 'fab',
-      url: 'https://github.com/ductran-94-dev',
+      url: 'https://github.com/ductmOfficial',
+    },
+    {
+      name: 'instagram',
+      prefix: 'fab',
+      url: 'https://www.instagram.com/minhduc.tran.sgu/',
     },
     {
       name: 'linkedin-in',
@@ -13,9 +18,14 @@ export default {
       url: 'https://www.linkedin.com/in/minh-duc-tran-554987109/',
     },
     {
-      name: 'instagram',
+      name: 'twitter',
       prefix: 'fab',
-      url: 'https://www.instagram.com/minhduc.tran.sgu/',
+      url: 'https://twitter.com/ductmOfficial',
+    },
+    {
+      name: 'codepen',
+      prefix: 'fab',
+      url: 'https://codepen.io/ductmofficial',
     },
   ],
 

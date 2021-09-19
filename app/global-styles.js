@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
     --fz-xxl: 22px;
     --fz-heading: 32px;
   
-    --border-radius: ${props => props.theme.shape.borderRadius};
+    --border-radius: ${props => props.theme.shape.borderRadius}px;
     --nav-height: 100px;
     --nav-scroll-height: 70px;
   
