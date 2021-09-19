@@ -7,11 +7,11 @@ export default {
       prefix: 'fab',
       url: 'https://github.com/ductmOfficial',
     },
-    // {
-    //   name: 'instagram',
-    //   prefix: 'fab',
-    //   url: 'https://www.instagram.com/minhduc.tran.sgu/',
-    // },
+    {
+      name: 'instagram',
+      prefix: 'fab',
+      url: 'https://www.instagram.com/ductmofficial',
+    },
     {
       name: 'linkedin-in',
       prefix: 'fab',
@@ -26,6 +26,11 @@ export default {
       name: 'codepen',
       prefix: 'fab',
       url: 'https://codepen.io/ductmofficial',
+    },
+    {
+      name: 'dharmachakra',
+      prefix: 'fas',
+      url: 'https://www.codewars.com/users/ductm_official',
     },
   ],
 
