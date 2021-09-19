@@ -19,24 +19,47 @@ import { makeSelectLocation } from 'containers/App/selectors';
 
 import Wrapper from './Wrapper';
 
+// https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]');
+}
+
 export function Layout({ children, location }) {
   const isHome = location.pathname === '/';
   const [isLoading, setIsLoading] = useState(isHome);
+
+  const handleExternalLinks = () => {
+    const allLinks = Array.from(document.querySelectorAll('a'));
+    if (allLinks.length > 0) {
+      allLinks.forEach(link => {
+        if (link.host !== window.location.host) {
+          link.setAttribute('rel', 'noopener noreferrer');
+          link.setAttribute('target', '_blank');
+        }
+      });
+    }
+  };
 
   useEffect(() => {
     if (isLoading) {
       return;
     }
+
     if (location.hash) {
       const id = location.hash.substring(1); // location.hash without the '#'
+
       setTimeout(() => {
         const el = document.getElementById(id);
+
         if (el) {
           el.scrollIntoView();
           el.focus();
         }
       }, 0);
     }
+
+    handleExternalLinks();
   }, [isLoading]);
 
   return (
