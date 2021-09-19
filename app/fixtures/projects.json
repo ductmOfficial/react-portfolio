@@ -12,7 +12,7 @@
         "company": "",
         "cover": "https://webdoctor.vn/wp-content/uploads/2017/10/Cach-chon-background-khi-thiet-ke-website.png"
       },
-      "html": "<p>A FreeCodeCamp Project. This site will display random quotes using the <a href='https://forismatic.com/ru/' target='_blank' rel='nofollow noopener noreferrer'>Forismatic API</a>. You can see the code and learn to work with API and front end. If you want, you can tweet the quotes. It will take you to a new page where you won't need to edit the post, because it brings only quotes below 140 characters.</p>"
+      "html": "<p>Online version of my 2021 resume made for fun. I was interested in learning React.js, so I found a simple tutorial and it spun into a weekend project.</p>"
     }
   },
   {
