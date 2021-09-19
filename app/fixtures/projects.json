@@ -1,0 +1,50 @@
+[
+  {
+    "node": {
+      "frontmatter": {
+        "date": "2020-09-15",
+        "title": "Portfolio",
+        "tech": ["React JS", "React Boilerplate", "Styled Components"],
+        "github": "https://github.com/ductran-94-dev",
+        "external": "https://github.com/ductran-94-dev",
+        "ios": null,
+        "android": null,
+        "company": "",
+        "cover": "https://webdoctor.vn/wp-content/uploads/2017/10/Cach-chon-background-khi-thiet-ke-website.png"
+      },
+      "html": "<p>A FreeCodeCamp Project. This site will display random quotes using the <a href='https://forismatic.com/ru/' target='_blank' rel='nofollow noopener noreferrer'>Forismatic API</a>. You can see the code and learn to work with API and front end. If you want, you can tweet the quotes. It will take you to a new page where you won't need to edit the post, because it brings only quotes below 140 characters.</p>"
+    }
+  },
+  {
+    "node": {
+      "frontmatter": {
+        "date": "2020-09-15",
+        "title": "Random Quote Machine",
+        "tech": ["React JS", "Typescript", "Styled Components"],
+        "github": "https://github.com/ductran-94-dev",
+        "external": "https://github.com/ductran-94-dev",
+        "ios": null,
+        "android": null,
+        "company": "",
+        "cover": "https://webdoctor.vn/wp-content/uploads/2017/10/Cach-chon-background-khi-thiet-ke-website.png"
+      },
+      "html": "<p>A FreeCodeCamp Project. This site will display random quotes using the <a href='https://forismatic.com/ru/' target='_blank' rel='nofollow noopener noreferrer'>Forismatic API</a>. You can see the code and learn to work with API and front end. If you want, you can tweet the quotes. It will take you to a new page where you won't need to edit the post, because it brings only quotes below 140 characters.</p>"
+    }
+  },
+  {
+    "node": {
+      "frontmatter": {
+        "date": "2020-01-10",
+        "title": "25 + 5 Clock",
+        "tech": ["React JS", "Typescript", "Styled Component"],
+        "github": "https://github.com/ductran-94-dev",
+        "external": "https://github.com/ductran-94-dev",
+        "ios": "",
+        "android": "",
+        "company": "",
+        "cover": "https://webdoctor.vn/wp-content/uploads/2017/10/Cach-chon-background-khi-thiet-ke-website.png"
+      },
+      "html": "<p>Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. This app is inspired by <a href='https://francescocirillo.com/pages/pomodoro-technique' target='_blank' rel='nofollow noopener noreferrer'>Pomodoro Technique</a> which is a time management method developed by Francesco Cirillo.</p>"
+    }
+  }
+]

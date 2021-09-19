@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "React JS",
+    "issuedBy": "freeCodeCamp.org",
+    "icon": "react",
+    "thumb": "https://cdn.worldvectorlogo.com/logos/react.svg"
+  },
+  {
+    "id": 2,
+    "title": "Typescript",
+    "issuedBy": "freeCodeCamp.org",
+    "icon": "js",
+    "thumb": "https://ostrowski.ninja/static/1482fb398d82ef51cfcfdbcd55e1ec03/a26eb/ts.png"
+  },
+  {
+    "id": 3,
+    "title": "VueJS",
+    "issuedBy": "freeCodeCamp.org",
+    "icon": "vuejs",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png"
+  },
+  {
+    "id": 5,
+    "title": "HTML(5)",
+    "issuedBy": "freeCodeCamp.org",
+    "icon": "html5",
+    "thumb": "https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png"
+  },
+  {
+    "id": 6,
+    "title": "(S)CSS",
+    "issuedBy": "freeCodeCamp.org",
+    "icon": "sass",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png"
+  }
+]

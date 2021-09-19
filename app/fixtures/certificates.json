@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Responsive Web Design",
+    "issuedBy": "freeCodeCamp.org"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Algorithms and Data Structures",
+    "issuedBy": "freeCodeCamp.org"
+  },
+  {
+    "id": 3,
+    "title": "Front End Libraries",
+    "issuedBy": "freeCodeCamp.org"
+  },
+  {
+    "id": 4,
+    "title": "Data Visualization",
+    "issuedBy": "freeCodeCamp.org"
+  },
+  {
+    "id": 5,
+    "title": "APIs and Microservices",
+    "issuedBy": "freeCodeCamp.org"
+  },
+  {
+    "id": 6,
+    "title": "Quality Assurance",
+    "issuedBy": "freeCodeCamp.org"
+  }
+]
