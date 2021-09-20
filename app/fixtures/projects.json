@@ -2,15 +2,31 @@
   {
     "node": {
       "frontmatter": {
+        "date": "2021-09-20",
+        "title": "Basic Calculator",
+        "tech": ["Vue JS", "Tailwind CSS"],
+        "github": "https://github.com/ductmOfficial/vue-tailwind-calculator",
+        "external": "https://ductm-calculator.netlify.app/",
+        "ios": null,
+        "android": null,
+        "company": "",
+        "cover": "https://d33wubrfki0l68.cloudfront.net/614894d1660cd900083e4a7a/screenshot_2021-09-20-14-04-31-0000.png"
+      },
+      "html": "<p>The program that we all use on a daily basis is the calculator. The calculator is a project that is both simple and practical. </p>"
+    }
+  },
+  {
+    "node": {
+      "frontmatter": {
         "date": "2020-09-15",
         "title": "Portfolio",
         "tech": ["React JS", "React Boilerplate", "Styled Components"],
         "github": "https://github.com/ductmOfficial",
-        "external": "https://github.com/ductmOfficial",
+        "external": "https://ductm.netlify.app/",
         "ios": null,
         "android": null,
         "company": "",
-        "cover": "https://webdoctor.vn/wp-content/uploads/2017/10/Cach-chon-background-khi-thiet-ke-website.png"
+        "cover": "https://ductm.netlify.app/og.png"
       },
       "html": "<p>Online version of my 2021 resume made for fun. I was interested in learning React.js, so I found a simple tutorial and it spun into a weekend project.</p>"
     }
