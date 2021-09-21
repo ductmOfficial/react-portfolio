@@ -2,6 +2,22 @@
   {
     "node": {
       "frontmatter": {
+        "date": "2021-09-21",
+        "title": "Movie Search App",
+        "tech": ["React JS", "Hooks", "Material UI"],
+        "github": "https://github.com/ductmOfficial/hooks-movie-app",
+        "external": "https://hooks-movie-app.netlify.app/",
+        "ios": null,
+        "android": null,
+        "company": "",
+        "cover": "https://d33wubrfki0l68.cloudfront.net/6149eddf1a5a0f00070a9443/screenshot_2021-09-21-14-37-43-0000.png"
+      },
+      "html": "<p>Building this application you will improve your React Skills using the relatively new Hooks API. The example projects make use of React components, many hooks, an external API, and of course some styling via CSS.</p>"
+    }
+  },
+  {
+    "node": {
+      "frontmatter": {
         "date": "2021-09-20",
         "title": "Basic Calculator",
         "tech": ["Vue JS", "Tailwind CSS"],
