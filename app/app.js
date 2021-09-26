@@ -16,6 +16,8 @@ import { ConnectedRouter } from 'connected-react-router';
 import history from 'utils/history';
 import fa from 'utils/fontAwesome';
 import 'sanitize.css/sanitize.css';
+import { firebase } from 'lib/firebase.prod';
+import { FirebaseContext } from 'context/firebase';
 
 // Import root app
 import App from 'containers/App';
@@ -48,15 +50,17 @@ const MOUNT_NODE = document.getElementById('app');
 
 const render = messages => {
   ReactDOM.render(
-    <Provider store={store}>
-      <LanguageProvider messages={messages}>
-        <ConnectedRouter history={history}>
-          <ThemeProvider theme={theme}>
-            <App />
-          </ThemeProvider>
-        </ConnectedRouter>
-      </LanguageProvider>
-    </Provider>,
+    <FirebaseContext.Provider value={{ firebase }}>
+      <Provider store={store}>
+        <LanguageProvider messages={messages}>
+          <ConnectedRouter history={history}>
+            <ThemeProvider theme={theme}>
+              <App />
+            </ThemeProvider>
+          </ConnectedRouter>
+        </LanguageProvider>
+      </Provider>
+    </FirebaseContext.Provider>,
     MOUNT_NODE,
   );
 };

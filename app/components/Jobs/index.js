@@ -5,12 +5,12 @@
  *
  */
 
+import PropTypes from 'prop-types';
 import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import config from 'utils/config';
 import sr from 'utils/sr';
 import { KEY_CODES } from 'utils/constants';
-import jobsData from 'fixtures/jobs.json';
 
 import Wrapper from './Wrapper';
 import Heading from './Heading';
@@ -20,7 +20,7 @@ import TabButton from './TabButton';
 import TabContent from './TabContent';
 import TabList from './TabList';
 
-function Jobs() {
+function Jobs({ jobs = [] }) {
   const [activeTabId, setActiveTabId] = useState(0);
   const revealContainer = useRef(null);
   const [tabFocus, setTabFocus] = useState(null);
@@ -64,8 +64,8 @@ function Jobs() {
       <Heading className="number-heading">Where I’ve Worked</Heading>
       <Inner>
         <TabList role="tablist" aria-label="Job tabs" onKeyDown={onKeyDown}>
-          {jobsData &&
-            jobsData.map(({ node }, i) => {
+          {jobs &&
+            jobs.map(({ node }, i) => {
               const { company } = node.frontmatter;
 
               return (
@@ -89,8 +89,8 @@ function Jobs() {
           <Highlight activeTabId={activeTabId} />
         </TabList>
 
-        {jobsData &&
-          jobsData.map(({ node }, i) => {
+        {jobs &&
+          jobs.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { title, url, company, range } = frontmatter;
 
@@ -135,3 +135,7 @@ function Jobs() {
 }
 
 export default Jobs;
+
+Jobs.propTypes = {
+  jobs: PropTypes.array,
+};

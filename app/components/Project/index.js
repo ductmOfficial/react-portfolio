@@ -3,9 +3,8 @@
  * Project
  *
  */
-
+import PropTypes from 'prop-types';
 import ProjectItem from 'components/ProjectItem';
-import projectData from 'fixtures/projects.json';
 import React, { useEffect, useRef, useState } from 'react';
 import config from 'utils/config';
 import sr from 'utils/sr';
@@ -17,7 +16,7 @@ import Wrapper from './Wrapper';
 
 const GRID_LIMIT = 6;
 
-function Project() {
+function Project({ projects = [] }) {
   const { srConfig } = config;
   const [showMore, setShowMore] = useState(false);
   const revealTitle = useRef(null);
@@ -32,8 +31,8 @@ function Project() {
     );
   }, []);
 
-  const firstSix = projectData.slice(0, GRID_LIMIT);
-  const projectsToShow = showMore ? projectData : firstSix;
+  const firstSix = projects.slice(0, GRID_LIMIT);
+  const projectsToShow = showMore ? projects : firstSix;
 
   return (
     <Wrapper id="projects">
@@ -69,7 +68,7 @@ function Project() {
       </Grid>
       <MoreButton
         onClick={() => setShowMore(!showMore)}
-        hidden={projectData.length <= GRID_LIMIT}
+        hidden={projects.length <= GRID_LIMIT}
       >
         Show {showMore ? 'Less' : 'More'}
       </MoreButton>
@@ -78,3 +77,7 @@ function Project() {
 }
 
 export default Project;
+
+Project.propTypes = {
+  projects: PropTypes.array,
+};

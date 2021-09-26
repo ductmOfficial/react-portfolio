@@ -4,20 +4,21 @@
  *
  */
 
+import PropTypes from 'prop-types';
 import FeaturedItem from 'components/FeaturedItem';
-import projectData from 'fixtures/projects.json';
 import React, { useEffect, useRef } from 'react';
 import config from 'utils/config';
 import sr from 'utils/sr';
 import Heading from './Heading';
 import Wrapper from './Wrapper';
 
-function Featured() {
+function Featured({ projects = [] }) {
   const { srConfig } = config;
-  const featuredProjects = projectData.slice(0, 3);
+  const featuredProjects = projects.slice(0, 3);
 
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
+
   useEffect(() => {
     sr.reveal(revealTitle.current, srConfig());
     revealProjects.current.forEach((ref, i) =>
@@ -51,3 +52,7 @@ function Featured() {
 }
 
 export default Featured;
+
+Featured.propTypes = {
+  projects: PropTypes.array,
+};

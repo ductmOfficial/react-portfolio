@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import { useContent } from 'hooks';
 
 import Biography from 'components/Biography';
 import Contact from 'components/Contact';
@@ -18,14 +19,17 @@ import Layout from 'containers/Layout';
 import Wrapper from './Wrapper';
 
 export default function HomePage() {
+  const { projects } = useContent('projects');
+  const { jobs } = useContent('jobs');
+
   return (
     <Layout>
       <Wrapper className="fill-height">
         <Hero />
         <Biography />
-        <Jobs />
-        <Featured />
-        <Project />
+        <Jobs jobs={jobs} />
+        <Featured projects={projects} />
+        <Project projects={projects} />
         <Contact />
       </Wrapper>
     </Layout>
